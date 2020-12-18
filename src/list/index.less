@@ -1,0 +1,32 @@
+@import '../style/index.less';
+
+.zec-list {
+  border-bottom: 1px solid @line-color;
+  color: @color-text-paragraph;
+  .zec-list-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 0 3%;
+  }
+  .left-main {
+    width: 65%;
+    font-size: @font-md;
+    overflow: hidden;
+  }
+  .right-main {
+    width: 35%;
+    font-size: @font-sm;
+    color: @color-text-paragraph;
+    text-align: right;
+    overflow: hidden;
+  }
+  .extra-text {
+    color: @color-text-paragraph;
+    font-size: @font-sm;
+  }
+  .touch-active {
+    background: rgba(0, 0, 0, .1);
+  }
+}

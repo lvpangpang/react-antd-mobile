@@ -1,0 +1,20 @@
+@import '../style/index.less';
+
+.zec-toast {
+  position: fixed;
+  left: 0;
+  top: 0;
+  .content {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    max-width: 240px;
+    word-break: break-all;
+    background: rgba(0, 0, 0, .7);
+    color: @color-text-base-inverse;
+    font-size: @font-md;
+    border-radius: @radius-md;
+    padding: @v-spacing-md @h-spacing-md;
+    -webkit-transform: translate(-50%, -50%);
+  }
+}

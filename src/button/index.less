@@ -1,0 +1,33 @@
+@import '../style/index.less';
+
+.zec-button {
+  font-size: @font-md;
+  color: #fff;
+  &-inner {
+    border-radius: @radius-md;
+    text-align: center;
+    padding: 14px 20px;
+  }
+  &-active {
+    color: @fill-tap !important;
+    opacity: .8;
+  }
+  &-primary {
+    background: @primary-color;
+  }
+  &-warning {
+    background: @warning-color;
+  }
+  &-success {
+    background: @success-color;
+  }
+  &-error {
+    background: @error-color;
+  }
+  &-disable {
+    opacity: .4;
+  }
+  .loading-right {
+    margin-right: 6px;
+  }
+}
