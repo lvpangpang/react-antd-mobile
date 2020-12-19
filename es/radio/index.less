@@ -1,0 +1,56 @@
+@import '../style/index.less';
+
+.zec-radio {
+  height: 48px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+	padding: 0px @v-spacing-lg;
+	border-bottom: 1px solid @line-color;
+	font-size: @font-md;
+  &:active {
+    background-color: @fill-tap;
+  }
+  .content {
+		display: inline-block;
+		.circle {
+			display: inline-block;
+			height: @length-sm;
+			width: @length-sm;
+			box-sizing: border-box;
+			border: 1px solid @line-color;
+			border-radius: 50%;
+			background-color: #fff;
+			position: relative;
+			vertical-align: middle;
+		}
+		.active {
+			background-color: @primary-color;
+			border-color: @primary-color;
+			.fork {
+				height: 12px;
+				width: 5px;
+				border-right: 1.5px solid #fff;
+				border-bottom: 1.5px solid #fff;
+				position: absolute;
+				top: 44%;
+				left: 51%;
+				transform: translate(-50%, -50%) rotate(45deg);
+			}
+		}
+		.label {
+			vertical-align: middle;
+			margin-left: 10px;
+			display: inline-block;
+			height: 22px;
+			line-height: 22px;
+			font-size: 14px;
+		}
+  }
+}
+.zec-radio:last-child {
+	border-bottom: none;
+}
+.zec-radio-disabled {
+	color: @color-text-disabled;
+}

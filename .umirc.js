@@ -1,4 +1,8 @@
+
 export default {
   title: 'Ltc',
-  publicPath: '/ltc/'
+  publicPath: '/ltc/',
+  history: {
+    type: 'hash'
+  }
 }
