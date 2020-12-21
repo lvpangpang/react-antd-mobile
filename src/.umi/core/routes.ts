@@ -30,7 +30,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/button/Readme.md",
-          "updatedTime": 1608285039051,
+          "updatedTime": 1608287462000,
           "slugs": [
             {
               "depth": 2,
@@ -57,7 +57,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/checkbox/Readme.md",
-          "updatedTime": 1608285946755,
+          "updatedTime": 1608287462000,
           "slugs": [
             {
               "depth": 2,
@@ -94,7 +94,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/icon/Readme.md",
-          "updatedTime": 1608286142449,
+          "updatedTime": 1608287462000,
           "slugs": [
             {
               "depth": 2,
@@ -121,7 +121,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/input/Readme.md",
-          "updatedTime": 1608286248891,
+          "updatedTime": 1608287462000,
           "slugs": [
             {
               "depth": 2,
@@ -148,7 +148,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/list/Readme.md",
-          "updatedTime": 1608286380393,
+          "updatedTime": 1608287462000,
           "slugs": [
             {
               "depth": 2,
@@ -175,7 +175,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/loading/Readme.md",
-          "updatedTime": 1608286363721,
+          "updatedTime": 1608287462000,
           "slugs": [
             {
               "depth": 2,
@@ -202,7 +202,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/radio/Readme.md",
-          "updatedTime": 1608286413392,
+          "updatedTime": 1608287462000,
           "slugs": [
             {
               "depth": 2,
@@ -239,7 +239,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/switch/Readme.md",
-          "updatedTime": 1608286451234,
+          "updatedTime": 1608287462000,
           "slugs": [
             {
               "depth": 2,
@@ -266,7 +266,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/toast/Readme.md",
-          "updatedTime": 1608286479079,
+          "updatedTime": 1608287462000,
           "slugs": [
             {
               "depth": 2,

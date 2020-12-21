@@ -12,7 +12,7 @@ type | 按钮类型 | string(primary, warning, error, success) | primary
 
 ```jsx
 import React from 'react';
-import { Button } from '../index';
+import { Button } from '../../es/index';
 
 function ButtonDome() {
   return(
