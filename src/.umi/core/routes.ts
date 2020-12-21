@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType } from 'C:/Users/86157/Desktop/吕肥肥的github/ltc/node_modules/@umijs/runtime';
+import { ApplyPluginsType } from '/Users/lvdaofeng/Documents/github/ltc/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 

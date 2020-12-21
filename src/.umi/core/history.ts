@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createBrowserHistory } from 'C:/Users/86157/Desktop/吕肥肥的github/ltc/node_modules/@umijs/runtime';
+import { createHashHistory } from '/Users/lvdaofeng/Documents/github/ltc/node_modules/@umijs/runtime';
 
 let options = {
   "basename": "/"
@@ -9,10 +9,10 @@ if ((<any>window).routerBase) {
 }
 
 // remove initial history because of ssr
-let history: any = process.env.__IS_SERVER ? null : createBrowserHistory(options);
+let history: any = process.env.__IS_SERVER ? null : createHashHistory(options);
 export const createHistory = (hotReload = false) => {
   if (!hotReload) {
-    history = createBrowserHistory(options);
+    history = createHashHistory(options);
   }
 
   return history;
