@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType } from '/Users/lvdaofeng/Documents/github/ltc/node_modules/@umijs/runtime';
+import { ApplyPluginsType } from 'C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 
@@ -9,7 +9,7 @@ export function getRoutes() {
   {
     "path": "/",
     "component": (props) => require('react').createElement(require('../../../node_modules/@umijs/preset-dumi/lib/themes/default/layout.js').default, {
-      ...{"menus":{"*":{"*":[{"path":"/","title":"README","meta":{"order":null}},{"title":"Button","path":"/button","meta":{},"children":[]},{"title":"Checkbox","path":"/checkbox","meta":{},"children":[]},{"title":"Icon","path":"/icon","meta":{},"children":[]},{"title":"Input","path":"/input","meta":{},"children":[]},{"title":"List","path":"/list","meta":{},"children":[]},{"title":"Loading","path":"/loading","meta":{},"children":[]},{"title":"Radio","path":"/radio","meta":{},"children":[]},{"title":"Switch","path":"/switch","meta":{},"children":[]},{"title":"Toast","path":"/toast","meta":{},"children":[]}]}},"locales":[],"navs":{},"title":"Ltc","mode":"doc","repoUrl":"https://github.com/lvpangpang/ltc"},
+      ...{"menus":{"*":{"*":[{"path":"/","title":"README","meta":{"order":null}},{"title":"Button","path":"/button","meta":{},"children":[]},{"title":"Checkbox","path":"/checkbox","meta":{},"children":[]},{"title":"Icon","path":"/icon","meta":{},"children":[]},{"title":"Input","path":"/input","meta":{},"children":[]},{"title":"List","path":"/list","meta":{},"children":[]},{"title":"Loading","path":"/loading","meta":{},"children":[]},{"title":"Radio","path":"/radio","meta":{},"children":[]},{"title":"Switch","path":"/switch","meta":{},"children":[]},{"title":"Toast","path":"/toast","meta":{},"children":[]}]}},"locales":[],"navs":{},"title":"Ltc","mode":"doc","repoUrl":"https://github.com/lvpangpang/react-antd-mobile"},
       ...props,
     }),
     "routes": [
@@ -30,7 +30,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/button/Readme.md",
-          "updatedTime": 1608287462000,
+          "updatedTime": 1608519178000,
           "slugs": [
             {
               "depth": 2,

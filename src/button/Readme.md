@@ -10,9 +10,9 @@ inline | 是否设置为行内按钮	 | boolean | false
 style | 自定义样式 | object | |
 type | 按钮类型 | string(primary, warning, error, success) | primary
 
-```jsx
+```tsx
 import React from 'react';
-import { Button } from '../../es/index';
+import Button  from './index';
 
 function ButtonDome() {
   return(
@@ -21,7 +21,7 @@ function ButtonDome() {
         <Button inline  onClick={() => {console.log('吕肥肥')}}>Inline</Button>
       </div>
       
-      <Button loading>提交</Button>
+      <Button loading ads='3213'>提交</Button>
       <br></br>
       <Button disabled>default disabled</Button>
       <br></br>

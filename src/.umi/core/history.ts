@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createHashHistory } from '/Users/lvdaofeng/Documents/github/ltc/node_modules/@umijs/runtime';
+import { createHashHistory } from 'C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/@umijs/runtime';
 
 let options = {
   "basename": "/"
