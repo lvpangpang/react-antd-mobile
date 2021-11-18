@@ -1,8 +1,11 @@
 
 export default {
-  title: 'Ltc',
-  publicPath: '/ltc/',
+  title: "react-antd-mobile",
   history: {
-    type: 'hash'
-  }
-}
+    type: "hash",
+  },
+  logo: "./index.ico",
+  favicon: "./index.ico",
+  publicPath: "./",
+  outputPath: "react-antd-mobile",
+};

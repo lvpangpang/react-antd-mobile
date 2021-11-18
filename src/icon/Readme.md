@@ -7,9 +7,9 @@ size | 大小 | string | |
 
 ```jsx
 import React from 'react';
-import { Icon } from '../index';
+import { Icon } from 'react-antd-mobile';
 
-function IconDome() {
+function Index() {
   const iconList = ['check', 'check-circle', 'loading', 'cross', 'left', 'right', 'down', 'up', 'search', 'ellipsis', 'voice', 'plus', 'minus', 'dislike', 'fail', 'success'];
   return(
     <>
@@ -21,6 +21,6 @@ function IconDome() {
     </>
   );
 }
-export default IconDome;
+export default Index;
 ```
 

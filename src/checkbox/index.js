@@ -1,22 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 import { useState } from 'react';
 import './index.less';
 
-interface CheckboxProps {
-  children: any,
-  value: Array<any>,
-  onChange: Function
-}
-
-interface CheckboxItemProps {
-  value: string | number,
-  label: string,
-  checkboxValue: any,
-  disabled?: boolean,
-  onClick: Function
-}
-
-function Checkbox(props: CheckboxProps) {
+function Checkbox(props) {
   const {
     children,
     value,
@@ -51,7 +37,7 @@ function Checkbox(props: CheckboxProps) {
   );
 }
 
-function CheckboxItem(props: CheckboxItemProps) {
+function CheckboxItem(props) {
   const {
     value,
     label,

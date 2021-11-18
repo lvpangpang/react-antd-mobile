@@ -1,5 +1,5 @@
-## Button
-### API
+# Button
+## API
 属性 | 说明 | 类型 | 默认值
 ---- | ---- | ---- | ----
 className | 按钮样式类名 | string | |
@@ -10,11 +10,11 @@ inline | 是否设置为行内按钮	 | boolean | false
 style | 自定义样式 | object | |
 type | 按钮类型 | string(primary, warning, error, success) | primary
 
-```tsx
+```jsx
 import React from 'react';
-import Button  from './index';
+import { Button }  from 'react-antd-mobile';
 
-function ButtonDome() {
+function Index() {
   return(
     <>
       <div style={{marginBottom: '25px'}}>
@@ -33,5 +33,5 @@ function ButtonDome() {
     </>
   );
 }
-export default ButtonDome;
+export default Index;
 ```

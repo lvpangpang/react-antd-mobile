@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createHashHistory } from 'C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/@umijs/runtime';
+import { createHashHistory, History } from 'C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/umi/node_modules/@umijs/runtime';
 
 let options = {
   "basename": "/"
@@ -9,7 +9,7 @@ if ((<any>window).routerBase) {
 }
 
 // remove initial history because of ssr
-let history: any = process.env.__IS_SERVER ? null : createHashHistory(options);
+let history: History = process.env.__IS_SERVER ? null : createHashHistory(options);
 export const createHistory = (hotReload = false) => {
   if (!hotReload) {
     history = createHashHistory(options);

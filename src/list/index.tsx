@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import TouchFeedback from 'rmc-feedback';
 
-import Icon from '../icon/index';
+import Icon from '../Icon/index';
 
 import './index.less';
 

@@ -2,3 +2,5 @@
 /dist
 .umi
 es
+yarn.lock
+react-antd-mobile

@@ -4,8 +4,8 @@ import '@@/core/devScripts';
 import { plugin } from './core/plugin';
 import './core/pluginRegister';
 import { createHistory } from './core/history';
-import { ApplyPluginsType } from 'C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/@umijs/runtime';
-import { renderClient } from 'C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/@umijs/renderer-react/dist/index.js';
+import { ApplyPluginsType } from 'C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/umi/node_modules/@umijs/runtime';
+import { renderClient } from 'C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/@umijs/renderer-react';
 import { getRoutes } from './core/routes';
 
 
@@ -24,7 +24,7 @@ const getClientRender = (args: { hot?: boolean; routes?: any[] } = {}) => plugin
         history: createHistory(args.hot),
         isServer: process.env.__IS_SERVER,
         rootElement: 'root',
-        defaultTitle: `Ltc`,
+        defaultTitle: `react-antd-mobile`,
       },
     });
     return renderClient(opts);
@@ -37,7 +37,7 @@ export default clientRender();
 
 
     window.g_umi = {
-      version: '3.3.2',
+      version: '3.5.20',
     };
   
 

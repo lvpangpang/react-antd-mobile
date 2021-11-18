@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import './index.less';
 
-interface Props {
+export interface Props {
   className?: string,
   placeholder?: string,
   type?: string,

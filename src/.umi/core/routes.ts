@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType } from 'C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/@umijs/runtime';
+import { ApplyPluginsType } from 'C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/umi/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 
@@ -9,7 +9,7 @@ export function getRoutes() {
   {
     "path": "/",
     "component": (props) => require('react').createElement(require('../../../node_modules/@umijs/preset-dumi/lib/themes/default/layout.js').default, {
-      ...{"menus":{"*":{"*":[{"path":"/","title":"README","meta":{"order":null}},{"title":"Button","path":"/button","meta":{},"children":[]},{"title":"Checkbox","path":"/checkbox","meta":{},"children":[]},{"title":"Icon","path":"/icon","meta":{},"children":[]},{"title":"Input","path":"/input","meta":{},"children":[]},{"title":"List","path":"/list","meta":{},"children":[]},{"title":"Loading","path":"/loading","meta":{},"children":[]},{"title":"Radio","path":"/radio","meta":{},"children":[]},{"title":"Switch","path":"/switch","meta":{},"children":[]},{"title":"Toast","path":"/toast","meta":{},"children":[]}]}},"locales":[],"navs":{},"title":"Ltc","mode":"doc","repoUrl":"https://github.com/lvpangpang/react-antd-mobile"},
+      ...{"menus":{"*":{"*":[{"path":"/","title":"README","meta":{"order":null}},{"title":"Button","path":"/button","meta":{},"children":[]},{"title":"Checkbox","path":"/checkbox","meta":{},"children":[]},{"title":"Icon","path":"/icon","meta":{},"children":[]},{"title":"Input","path":"/input","meta":{},"children":[]},{"title":"List","path":"/list","meta":{},"children":[]},{"title":"Loading","path":"/loading","meta":{},"children":[]},{"title":"Radio","path":"/radio","meta":{},"children":[]},{"title":"Switch","path":"/switch","meta":{},"children":[]},{"title":"Toast","path":"/toast","meta":{},"children":[]}]}},"locales":[],"navs":{},"title":"react-antd-mobile","logo":"./index.ico","mode":"doc","repoUrl":"https://github.com/lvpangpang/react-antd-mobile"},
       ...props,
     }),
     "routes": [
@@ -26,19 +26,19 @@ export function getRoutes() {
       },
       {
         "path": "/button",
-        "component": require('../../button/Readme.md').default,
+        "component": require('../../Button/README.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/button/Readme.md",
-          "updatedTime": 1608519178000,
+          "filePath": "src/Button/README.md",
+          "updatedTime": 1637142928139,
           "slugs": [
             {
-              "depth": 2,
+              "depth": 1,
               "value": "Button",
               "heading": "button"
             },
             {
-              "depth": 3,
+              "depth": 2,
               "value": "API",
               "heading": "api"
             }
@@ -53,19 +53,19 @@ export function getRoutes() {
       },
       {
         "path": "/checkbox",
-        "component": require('../../checkbox/Readme.md').default,
+        "component": require('../../Checkbox/README.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/checkbox/Readme.md",
-          "updatedTime": 1608287462000,
+          "filePath": "src/Checkbox/README.md",
+          "updatedTime": 1637142337368,
           "slugs": [
             {
-              "depth": 2,
+              "depth": 1,
               "value": "Checkbox",
               "heading": "checkbox"
             },
             {
-              "depth": 3,
+              "depth": 2,
               "value": "API",
               "heading": "api"
             },
@@ -75,7 +75,7 @@ export function getRoutes() {
               "heading": "checkboxitem"
             },
             {
-              "depth": 3,
+              "depth": 2,
               "value": "API",
               "heading": "api-1"
             }
@@ -90,11 +90,11 @@ export function getRoutes() {
       },
       {
         "path": "/icon",
-        "component": require('../../icon/Readme.md').default,
+        "component": require('../../Icon/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/icon/Readme.md",
-          "updatedTime": 1608287462000,
+          "filePath": "src/Icon/Readme.md",
+          "updatedTime": 1637140983871,
           "slugs": [
             {
               "depth": 2,
@@ -117,19 +117,19 @@ export function getRoutes() {
       },
       {
         "path": "/input",
-        "component": require('../../input/Readme.md').default,
+        "component": require('../../Input/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/input/Readme.md",
-          "updatedTime": 1608287462000,
+          "filePath": "src/Input/Readme.md",
+          "updatedTime": 1637141419330,
           "slugs": [
             {
-              "depth": 2,
+              "depth": 1,
               "value": "Input",
               "heading": "input"
             },
             {
-              "depth": 3,
+              "depth": 2,
               "value": "API",
               "heading": "api"
             }
@@ -144,19 +144,19 @@ export function getRoutes() {
       },
       {
         "path": "/list",
-        "component": require('../../list/Readme.md').default,
+        "component": require('../../List/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/list/Readme.md",
-          "updatedTime": 1608287462000,
+          "filePath": "src/List/Readme.md",
+          "updatedTime": 1637141430145,
           "slugs": [
             {
-              "depth": 2,
+              "depth": 1,
               "value": "List",
               "heading": "list"
             },
             {
-              "depth": 3,
+              "depth": 2,
               "value": "API",
               "heading": "api"
             }
@@ -171,19 +171,19 @@ export function getRoutes() {
       },
       {
         "path": "/loading",
-        "component": require('../../loading/Readme.md').default,
+        "component": require('../../Loading/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/loading/Readme.md",
-          "updatedTime": 1608287462000,
+          "filePath": "src/Loading/Readme.md",
+          "updatedTime": 1637141439735,
           "slugs": [
             {
-              "depth": 2,
+              "depth": 1,
               "value": "Loading",
               "heading": "loading"
             },
             {
-              "depth": 3,
+              "depth": 2,
               "value": "API",
               "heading": "api"
             }
@@ -198,19 +198,19 @@ export function getRoutes() {
       },
       {
         "path": "/radio",
-        "component": require('../../radio/Readme.md').default,
+        "component": require('../../Radio/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/radio/Readme.md",
-          "updatedTime": 1608287462000,
+          "filePath": "src/Radio/Readme.md",
+          "updatedTime": 1637141523639,
           "slugs": [
             {
-              "depth": 2,
+              "depth": 1,
               "value": "Radio",
               "heading": "radio"
             },
             {
-              "depth": 3,
+              "depth": 2,
               "value": "API",
               "heading": "api"
             },
@@ -235,19 +235,19 @@ export function getRoutes() {
       },
       {
         "path": "/switch",
-        "component": require('../../switch/Readme.md').default,
+        "component": require('../../Switch/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/switch/Readme.md",
-          "updatedTime": 1608287462000,
+          "filePath": "src/Switch/Readme.md",
+          "updatedTime": 1637141535775,
           "slugs": [
             {
-              "depth": 2,
+              "depth": 1,
               "value": "Switch",
               "heading": "switch"
             },
             {
-              "depth": 3,
+              "depth": 2,
               "value": "API",
               "heading": "api"
             }
@@ -262,24 +262,24 @@ export function getRoutes() {
       },
       {
         "path": "/toast",
-        "component": require('../../toast/Readme.md').default,
+        "component": require('../../Toast/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/toast/Readme.md",
-          "updatedTime": 1608287462000,
+          "filePath": "src/Toast/Readme.md",
+          "updatedTime": 1637141361353,
           "slugs": [
             {
-              "depth": 2,
+              "depth": 1,
               "value": "Toast",
               "heading": "toast"
             },
             {
-              "depth": 3,
+              "depth": 2,
               "value": "API",
               "heading": "api"
             },
             {
-              "depth": 3,
+              "depth": 2,
               "value": "Function",
               "heading": "function"
             }
@@ -293,7 +293,7 @@ export function getRoutes() {
         "title": "Toast"
       }
     ],
-    "title": "Ltc"
+    "title": "react-antd-mobile"
   }
 ];
 

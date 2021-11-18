@@ -1,24 +1,25 @@
-export declare function Button(props: {
-
-  children: any
+declare interface ButtonProps {
+  children?: any;
 
   // 样式
-  className?: string,
+  className?: string;
 
   // 按钮是否被🚫
-  disabled?: boolean,
+  disabled?: boolean;
 
   // 点击回调的事件
-  onClick?: Function,
-  
+  onClick?: Function;
+
   // loading
-  loading?: boolean,
+  loading?: boolean;
 
   // 主题
-  type?: 'primary' | 'success' | 'error' | 'warning',
+  type?: "primary" | "success" | "error" | "warning";
 
   // 样式
-  style?: string,
+  style?: string;
 
-  inline: boolean
-})
+  inline?: boolean;
+}
+
+export declare function Button(props: ButtonProps);
