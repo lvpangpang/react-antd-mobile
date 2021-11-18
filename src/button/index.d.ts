@@ -1,8 +1,4 @@
 declare interface ButtonProps {
-  children?: any;
-
-  // 样式
-  className?: string;
 
   // 按钮是否被🚫
   disabled?: boolean;
@@ -16,9 +12,7 @@ declare interface ButtonProps {
   // 主题
   type?: "primary" | "success" | "error" | "warning";
 
-  // 样式
-  style?: string;
-
+  // 是否行内元素
   inline?: boolean;
 }
 

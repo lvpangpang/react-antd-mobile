@@ -2,7 +2,7 @@
 
 React 移动端组件库
 
-**[文档地址](http://116.62.139.102/react-antd-mobile)**
+**[文档地址](https://lvpangpang.github.io/react-antd-mobile)**
 
 使用 demo
 

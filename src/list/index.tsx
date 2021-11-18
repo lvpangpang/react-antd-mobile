@@ -6,7 +6,7 @@ import Icon from '../Icon/index';
 
 import './index.less';
 
-interface Props {
+export interface Props {
   className?: string,
   leftMainText: string,
   leftextraText?: string,

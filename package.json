@@ -1,6 +1,6 @@
 {
   "name": "react-antd-mobile",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "基于dumi+father的react组件库",
   "main": "index.js",
   "module": "es/index.js",

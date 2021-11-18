@@ -30,7 +30,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/Button/README.md",
-          "updatedTime": 1637142928139,
+          "updatedTime": 1637225170650,
           "slugs": [
             {
               "depth": 1,
