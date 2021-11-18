@@ -90,11 +90,11 @@ export function getRoutes() {
       },
       {
         "path": "/icon",
-        "component": require('../../Icon/Readme.md').default,
+        "component": require('../../Icon/README.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Icon/Readme.md",
-          "updatedTime": 1637140983871,
+          "filePath": "src/Icon/README.md",
+          "updatedTime": 1637214653555,
           "slugs": [
             {
               "depth": 2,
@@ -117,11 +117,11 @@ export function getRoutes() {
       },
       {
         "path": "/input",
-        "component": require('../../Input/Readme.md').default,
+        "component": require('../../Input/README.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Input/Readme.md",
-          "updatedTime": 1637141419330,
+          "filePath": "src/Input/README.md",
+          "updatedTime": 1637214671430,
           "slugs": [
             {
               "depth": 1,
@@ -144,11 +144,11 @@ export function getRoutes() {
       },
       {
         "path": "/list",
-        "component": require('../../List/Readme.md').default,
+        "component": require('../../List/README.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/List/Readme.md",
-          "updatedTime": 1637141430145,
+          "filePath": "src/List/README.md",
+          "updatedTime": 1637214680408,
           "slugs": [
             {
               "depth": 1,
@@ -171,11 +171,11 @@ export function getRoutes() {
       },
       {
         "path": "/loading",
-        "component": require('../../Loading/Readme.md').default,
+        "component": require('../../Loading/README.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Loading/Readme.md",
-          "updatedTime": 1637141439735,
+          "filePath": "src/Loading/README.md",
+          "updatedTime": 1637214687436,
           "slugs": [
             {
               "depth": 1,
@@ -198,11 +198,11 @@ export function getRoutes() {
       },
       {
         "path": "/radio",
-        "component": require('../../Radio/Readme.md').default,
+        "component": require('../../Radio/README.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Radio/Readme.md",
-          "updatedTime": 1637141523639,
+          "filePath": "src/Radio/README.md",
+          "updatedTime": 1637214693681,
           "slugs": [
             {
               "depth": 1,
@@ -235,11 +235,11 @@ export function getRoutes() {
       },
       {
         "path": "/switch",
-        "component": require('../../Switch/Readme.md').default,
+        "component": require('../../Switch/README.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Switch/Readme.md",
-          "updatedTime": 1637141535775,
+          "filePath": "src/Switch/README.md",
+          "updatedTime": 1637214711031,
           "slugs": [
             {
               "depth": 1,
@@ -262,11 +262,11 @@ export function getRoutes() {
       },
       {
         "path": "/toast",
-        "component": require('../../Toast/Readme.md').default,
+        "component": require('../../Toast/README.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Toast/Readme.md",
-          "updatedTime": 1637141361353,
+          "filePath": "src/Toast/README.md",
+          "updatedTime": 1637214721166,
           "slugs": [
             {
               "depth": 1,

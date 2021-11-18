@@ -3,17 +3,8 @@ import { useState } from 'react';
 
 import './index.less';
 
-export interface Props {
-  className?: string,
-  placeholder?: string,
-  type?: string,
-  value?: string,
-  disabled?: boolean,
-  maxLength?: number,
-  onChange?: (val: any) => void
-}
 
-function Input(props: Props) {
+function Input(props) {
   const {
     className='',
     placeholder,
@@ -21,12 +12,12 @@ function Input(props: Props) {
     value,
     disabled,
     maxLength,
-    onChange=(val:any) => {}
+    onChange=(val) => {}
   } = props;
 
   const [myValue, setMyValue] = useState(value);
 
-  const myChange = (e:any) => {
+  const myChange = (e) => {
     const value = e.target.value;
     setMyValue(value);
     onChange(value);

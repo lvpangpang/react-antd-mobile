@@ -7,5 +7,5 @@ export default {
   logo: "./index.ico",
   favicon: "./index.ico",
   publicPath: "./",
-  outputPath: "react-antd-mobile",
+  outputPath: "docs"
 };
