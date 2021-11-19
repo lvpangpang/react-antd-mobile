@@ -10,6 +10,8 @@
 | name     | name                      | String                |         |
 | onChange | change 事件触发的回调函数 | (checked: bool): void |         |
 
+## DEMOS
+
 ```jsx
 import React from "react";
 import { Switch } from "react-antd-mobile";

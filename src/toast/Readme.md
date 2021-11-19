@@ -16,6 +16,8 @@
   Toast.hide()
 ```
 
+## DEMOS
+
 ```jsx
 import React from "react";
 import { Button, Toast } from "react-antd-mobile";

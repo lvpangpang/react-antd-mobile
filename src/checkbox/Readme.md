@@ -17,6 +17,8 @@
 | label    | name | string           |        |
 | disabled | 禁用 | boolean          | false  |
 
+## DEMOS
+
 ```jsx
 import React from "react";
 import { Checkbox } from "react-antd-mobile";

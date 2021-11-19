@@ -9,13 +9,15 @@
 
 ## RadioItem
 
-### API
+## API
 
 | 属性     | 说明 | 类型             | 默认值 |
 | -------- | ---- | ---------------- | ------ |
 | value    | 值   | string or number |        |
 | label    | name | string           |        |
 | disabled | 禁用 | boolean          | false  |
+
+## DEMOS
 
 ```jsx
 import React from "react";

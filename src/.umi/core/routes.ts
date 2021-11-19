@@ -30,7 +30,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/Button/README.md",
-          "updatedTime": 1637225170650,
+          "updatedTime": 1637309425210,
           "slugs": [
             {
               "depth": 1,
@@ -41,6 +41,11 @@ export function getRoutes() {
               "depth": 2,
               "value": "API",
               "heading": "api"
+            },
+            {
+              "depth": 2,
+              "value": "DEMOS",
+              "heading": "demos"
             }
           ],
           "title": "Button",

@@ -6,6 +6,8 @@
 | ----- | ---- | ------ | ------ |
 | style | zid  | object |        |
 
+## DEMOS
+
 ```jsx
 import React from "react";
 import { Button, Loading } from "react-antd-mobile";
@@ -19,7 +21,7 @@ function LoadingDome() {
     <>
       <Button
         onClick={() => {
-          Loading.show({ background: "red" });
+          Loading.show();
         }}
       >
         Loading
