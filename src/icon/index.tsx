@@ -2,7 +2,13 @@ import * as React from 'react';
 import svgSprite from './svg';
 import './index.less';
 
-function Icon(props) {
+interface IconProps {
+  type: string;
+  size?: "xs" | "sm" | "md" | "lg";
+  color?: string;
+}
+
+function Icon(props: IconProps) {
   const {
     type,
     size='md',

@@ -1,6 +1,6 @@
 {
   "name": "react-antd-mobile",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "react移动端组件库",
   "main": "index.js",
   "module": "es/index.js",
@@ -8,7 +8,7 @@
   "scripts": {
     "start": "dumi dev",
     "build:doc": "dumi build",
-    "build": "father build"
+    "build": "gulp"
   },
   "files": [
     "es"
@@ -23,11 +23,21 @@
     "url": "https://github.com/lvpangpang/react-antd-mobile/issues"
   },
   "homepage": "https://github.com/lvpangpang/react-antd-mobile#readme",
+  "sideEffects": [
+    "**/*.css",
+    "**/*.less",
+    "./es/index.js",
+    "./src/index.ts"
+  ],
   "devDependencies": {
-    "babel-plugin-import": "1.13.3",
+    "@babel/core": "^7.16.0",
     "dumi": "1.0.38",
     "dumi-theme-mobile": "^1.1.15",
     "father": "2.30.13",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-less": "^5.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "supports-color": "8.1.0"
   },
   "dependencies": {

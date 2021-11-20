@@ -3,7 +3,26 @@ import TouchFeedback from "rmc-feedback";
 import Icon from "../Icon/index";
 import "./index.less";
 
-function Button(props) {
+declare interface ButtonProps {
+  // 按钮是否被🚫
+  disabled?: boolean;
+
+  // 点击回调的事件
+  onClick?: Function;
+
+  // loading
+  loading?: boolean;
+
+  // 主题
+  type?: "primary" | "success" | "error" | "warning";
+
+  // 是否行内元素
+  inline?: boolean;
+
+  children?: any;
+}
+
+function Button(props: ButtonProps) {
   const {
     children,
     disabled = false,
@@ -27,7 +46,7 @@ function Button(props) {
 
   return (
     <div
-      style={inline && { display: "inline-block" }}
+      style={inline ? { display: "inline-block" } : {}}
       className="zec-button"
       onClick={_onClick}
     >
