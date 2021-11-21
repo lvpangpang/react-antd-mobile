@@ -1,6 +1,6 @@
 {
   "name": "react-antd-mobile",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "react移动端组件库",
   "main": "index.js",
   "module": "es/index.js",
@@ -31,6 +31,7 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
     "dumi": "1.0.38",
     "dumi-theme-mobile": "^1.1.15",
     "father": "2.30.13",
