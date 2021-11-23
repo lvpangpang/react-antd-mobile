@@ -21,9 +21,6 @@ function Index() {
   return (
     <>
       <Input placeholder="请输入姓名"></Input>
-
-      <br />
-
       <Input
         type="number"
         placeholder="请输入数字"
@@ -32,9 +29,6 @@ function Index() {
           console.log(val);
         }}
       ></Input>
-
-      <br />
-
       <Input
         disabled
         placeholder="请输入姓名"

@@ -7,30 +7,87 @@ import { plugin } from './plugin';
 export function getRoutes() {
   const routes = [
   {
+    "path": "/~demos/:uuid",
+    "layout": false,
+    "wrappers": [require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/dumi-theme-mobile/es/layouts/demo.js').default],
+    "component": (props) => {
+        const { default: getDemoRenderArgs } = require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
+        const { default: Previewer } = require('dumi-theme-mobile/es/builtins/Previewer.js');
+        const { default: demos } = require('@@/dumi/demos');
+        const { usePrefersColor } = require('dumi/theme');
+
+        
+      const renderArgs = getDemoRenderArgs(props, demos);
+
+      // for listen prefers-color-schema media change in demo single route
+      usePrefersColor();
+
+      switch (renderArgs.length) {
+        case 1:
+          // render demo directly
+          return renderArgs[0];
+
+        case 2:
+          // render demo with previewer
+          return React.createElement(
+            Previewer,
+            renderArgs[0],
+            renderArgs[1],
+          );
+
+        default:
+          return `Demo ${props.match.params.uuid} not found :(`;
+      }
+    
+        }
+  },
+  {
+    "path": "/_demos/:uuid",
+    "redirect": "/~demos/:uuid"
+  },
+  {
+    "__dumiRoot": true,
+    "layout": false,
     "path": "/",
-    "component": (props) => require('react').createElement(require('../../../node_modules/@umijs/preset-dumi/lib/themes/default/layout.js').default, {
-      ...{"menus":{"*":{"*":[{"path":"/","title":"README","meta":{"order":null}},{"title":"Button","path":"/button","meta":{},"children":[]},{"title":"Checkbox","path":"/checkbox","meta":{},"children":[]},{"title":"Icon","path":"/icon","meta":{},"children":[]},{"title":"Input","path":"/input","meta":{},"children":[]},{"title":"List","path":"/list","meta":{},"children":[]},{"title":"Loading","path":"/loading","meta":{},"children":[]},{"title":"Radio","path":"/radio","meta":{},"children":[]},{"title":"Switch","path":"/switch","meta":{},"children":[]},{"title":"Toast","path":"/toast","meta":{},"children":[]}]}},"locales":[],"navs":{},"title":"react-antd-mobile","logo":"./index.ico","mode":"doc","repoUrl":"https://github.com/lvpangpang/react-antd-mobile"},
-      ...props,
-    }),
+    "wrappers": [require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/dumi-theme-mobile/es/layouts/index.js').default],
     "routes": [
       {
         "path": "/",
-        "component": require('../../../README.md').default,
+        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/README.md').default,
         "exact": true,
         "meta": {
           "locale": "en-US",
-          "title": "README",
-          "order": null
+          "order": null,
+          "filePath": "README.md",
+          "updatedTime": 1637409755000,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "react-antd-mobile",
+              "heading": "react-antd-mobile"
+            },
+            {
+              "depth": 2,
+              "value": "1. 使用 demo",
+              "heading": "1-使用-demo"
+            },
+            {
+              "depth": 2,
+              "value": "2. 按需加载",
+              "heading": "2-按需加载"
+            }
+          ],
+          "title": "react-antd-mobile"
         },
-        "title": "README"
+        "title": "react-antd-mobile"
       },
       {
         "path": "/button",
-        "component": require('../../Button/README.md').default,
+        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Button/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/Button/README.md",
-          "updatedTime": 1637309425210,
+          "updatedTime": 1637647599716,
           "slugs": [
             {
               "depth": 1,
@@ -54,11 +111,11 @@ export function getRoutes() {
             "title": "Button"
           }
         },
-        "title": "Button"
+        "title": "Button - react-antd-mobile"
       },
       {
         "path": "/checkbox",
-        "component": require('../../Checkbox/README.md').default,
+        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Checkbox/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/Checkbox/README.md",
@@ -96,15 +153,15 @@ export function getRoutes() {
             "title": "Checkbox"
           }
         },
-        "title": "Checkbox"
+        "title": "Checkbox - react-antd-mobile"
       },
       {
         "path": "/icon",
-        "component": require('../../Icon/README.md').default,
+        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Icon/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/Icon/README.md",
-          "updatedTime": 1637309566792,
+          "updatedTime": 1637647750529,
           "slugs": [
             {
               "depth": 1,
@@ -128,15 +185,15 @@ export function getRoutes() {
             "title": "Icon"
           }
         },
-        "title": "Icon"
+        "title": "Icon - react-antd-mobile"
       },
       {
         "path": "/input",
-        "component": require('../../Input/README.md').default,
+        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Input/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/Input/README.md",
-          "updatedTime": 1637309591096,
+          "updatedTime": 1637647799180,
           "slugs": [
             {
               "depth": 1,
@@ -160,11 +217,11 @@ export function getRoutes() {
             "title": "Input"
           }
         },
-        "title": "Input"
+        "title": "Input - react-antd-mobile"
       },
       {
         "path": "/list",
-        "component": require('../../List/README.md').default,
+        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/List/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/List/README.md",
@@ -192,11 +249,11 @@ export function getRoutes() {
             "title": "List"
           }
         },
-        "title": "List"
+        "title": "List - react-antd-mobile"
       },
       {
         "path": "/loading",
-        "component": require('../../Loading/README.md').default,
+        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Loading/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/Loading/README.md",
@@ -224,11 +281,11 @@ export function getRoutes() {
             "title": "Loading"
           }
         },
-        "title": "Loading"
+        "title": "Loading - react-antd-mobile"
       },
       {
         "path": "/radio",
-        "component": require('../../Radio/README.md').default,
+        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Radio/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/Radio/README.md",
@@ -266,11 +323,11 @@ export function getRoutes() {
             "title": "Radio"
           }
         },
-        "title": "Radio"
+        "title": "Radio - react-antd-mobile"
       },
       {
         "path": "/switch",
-        "component": require('../../Switch/README.md').default,
+        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Switch/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/Switch/README.md",
@@ -298,15 +355,15 @@ export function getRoutes() {
             "title": "Switch"
           }
         },
-        "title": "Switch"
+        "title": "Switch - react-antd-mobile"
       },
       {
         "path": "/toast",
-        "component": require('../../Toast/README.md').default,
+        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Toast/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "src/Toast/README.md",
-          "updatedTime": 1637309644444,
+          "updatedTime": 1637647938965,
           "slugs": [
             {
               "depth": 1,
@@ -335,10 +392,11 @@ export function getRoutes() {
             "title": "Toast"
           }
         },
-        "title": "Toast"
+        "title": "Toast - react-antd-mobile"
       }
     ],
-    "title": "react-antd-mobile"
+    "title": "react-antd-mobile",
+    "component": (props) => props.children
   }
 ];
 

@@ -39,13 +39,13 @@ function Index() {
           <div
             style={{
               display: "inline-block",
-              width: "33.3%",
+              width: "50%",
               margin: "0 0 50px 0",
               textAlign: "center",
             }}
           >
             <Icon type={item}></Icon>
-            <p>{item}</p>
+            <p style={{ fontSize: "16px" }}>{item}</p>
           </div>
         );
       })}
