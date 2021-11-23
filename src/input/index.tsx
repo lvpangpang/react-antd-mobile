@@ -1,10 +1,9 @@
-import * as React from 'react';
+import React from 'react';
 import { useState } from 'react';
 
 import './index.less';
 
 interface InputProps {
-  className?: string;
   placeholder?: string;
   type?: string;
   value?: string;
@@ -15,7 +14,6 @@ interface InputProps {
 
 function Input(props: InputProps) {
   const {
-    className='',
     placeholder,
     type='text',
     value,
@@ -33,7 +31,7 @@ function Input(props: InputProps) {
   }
 
   return (
-    <div className={`zec-input ${className}`}>
+    <div className='zec-input'>
       <input 
         className='input'
         placeholder={placeholder}

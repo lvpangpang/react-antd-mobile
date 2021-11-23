@@ -11,9 +11,9 @@
 
 ## Function
 
-```
-  Toast.info(props)
-  Toast.hide()
+```js
+Toast.info({}); // 开启一个Toast
+Toast.hide(); // 关闭Toast
 ```
 
 ## DEMOS
@@ -28,8 +28,7 @@ function ToastDome() {
       <Button
         onClick={() => {
           Toast.info({
-            content:
-              "吕肥肥吕肥肥吕肥肥吕肥肥吕肥肥吕肥肥吕肥肥吕肥肥吕肥肥吕肥肥吕肥肥吕肥肥吕肥肥吕肥肥吕肥肥",
+            content: "吕肥肥吕肥肥吕肥",
           });
         }}
       >

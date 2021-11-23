@@ -193,7 +193,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/Input/README.md",
-          "updatedTime": 1637647799180,
+          "updatedTime": 1637650467451,
           "slugs": [
             {
               "depth": 1,
@@ -225,7 +225,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/List/README.md",
-          "updatedTime": 1637309599515,
+          "updatedTime": 1637650511624,
           "slugs": [
             {
               "depth": 1,
@@ -257,7 +257,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/Loading/README.md",
-          "updatedTime": 1637309792226,
+          "updatedTime": 1637650378131,
           "slugs": [
             {
               "depth": 1,
@@ -268,6 +268,11 @@ export function getRoutes() {
               "depth": 2,
               "value": "API",
               "heading": "api"
+            },
+            {
+              "depth": 2,
+              "value": "Function",
+              "heading": "function"
             },
             {
               "depth": 2,
@@ -363,7 +368,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/Toast/README.md",
-          "updatedTime": 1637647938965,
+          "updatedTime": 1637650292882,
           "slugs": [
             {
               "depth": 1,

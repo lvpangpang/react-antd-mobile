@@ -1,10 +1,9 @@
-import * as React from "react";
+import React from "react";
 import TouchFeedback from "rmc-feedback";
 import Icon from "../Icon/index";
 import "./index.less";
 
 export interface Props {
-  className?: string;
   leftMainText: string;
   leftextraText?: string;
   rightMainText?: string;
@@ -13,7 +12,6 @@ export interface Props {
 
 function List(props: Props) {
   const {
-    className = "",
     leftMainText,
     leftextraText,
     rightMainText,
@@ -21,7 +19,7 @@ function List(props: Props) {
   } = props;
 
   return (
-    <div className={`zec-list ${className}`} onClick={onClick || function() {}}>
+    <div className='zec-list' onClick={onClick || function() {}}>
       <TouchFeedback activeClassName={onClick ? "touch-active" : ""}>
         <div className="zec-list-inner">
           <div className="left-main">

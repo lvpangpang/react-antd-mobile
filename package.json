@@ -30,15 +30,15 @@
     "./src/index.ts"
   ],
   "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "dumi": "^1.1.32",
-    "dumi-theme-mobile": "^1.1.15",
+    "@babel/core": "7.16.0",
+    "@babel/preset-env": "7.16.4",
+    "dumi": "1.1.32",
+    "dumi-theme-mobile": "1.1.15",
     "father": "2.30.13",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-less": "^5.0.0",
-    "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp": "4.0.2",
+    "gulp-babel": "8.0.0",
+    "gulp-less": "5.0.0",
+    "gulp-typescript": "6.0.0-alpha.1",
     "supports-color": "8.1.0"
   },
   "dependencies": {

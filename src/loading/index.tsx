@@ -1,34 +1,26 @@
-import * as React from 'react';
-import ReactDOM from 'react-dom';
-import './index.less';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.less";
 
-interface Props {
-  style?: object
-}
-
-function Loading(props: Props) {
-  const {
-    style
-  } = props;
-
+function Loading() {
   return (
-    <div className='zec-loading'>
+    <div className="zec-loading">
       <div className="spinner">
-        <div className="double-bounce1" style={style}></div>
-        <div className="double-bounce2" style={style}></div>
+        <div className="double-bounce1"></div>
+        <div className="double-bounce2"></div>
       </div>
     </div>
   );
 }
 
-const div = document.createElement('div');
+const div = document.createElement("div");
 
 export default {
-  show(style: Props) {
+  show() {
     document.body.appendChild(div);
-    ReactDOM.render(<Loading style={style} />, div);
+    ReactDOM.render(<Loading />, div);
   },
   hide() {
     document.body.removeChild(div);
-  }
+  },
 };
