@@ -8,5 +8,5 @@ module.exports = {
       },
     ],
   ],
-  plugins: ["./babel-transform-less-to-css"],
+  // plugins: ["./babel-transform-less-to-css"],
 };

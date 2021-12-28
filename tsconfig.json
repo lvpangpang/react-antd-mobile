@@ -5,7 +5,7 @@
     "moduleResolution": "node",
     "jsx": "react",
     "allowJs": true,
-    "declaration": false,
+    "declaration": true,
     "esModuleInterop": true,
     "downlevelIteration": true,
     "sourceMap": true,

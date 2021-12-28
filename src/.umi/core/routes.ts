@@ -156,6 +156,38 @@ export function getRoutes() {
         "title": "Checkbox - react-antd-mobile"
       },
       {
+        "path": "/grid/readem",
+        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Grid/READEM.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/Grid/READEM.md",
+          "updatedTime": 1640682141195,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Grid",
+              "heading": "grid"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            },
+            {
+              "depth": 2,
+              "value": "DEMOS",
+              "heading": "demos"
+            }
+          ],
+          "title": "Grid",
+          "group": {
+            "path": "/grid",
+            "title": "Grid"
+          }
+        },
+        "title": "Grid - react-antd-mobile"
+      },
+      {
         "path": "/icon",
         "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Icon/README.md').default,
         "exact": true,
@@ -398,6 +430,12 @@ export function getRoutes() {
           }
         },
         "title": "Toast - react-antd-mobile"
+      },
+      {
+        "path": "/grid",
+        "meta": {},
+        "exact": true,
+        "redirect": "/grid/readem"
       }
     ],
     "title": "react-antd-mobile",
