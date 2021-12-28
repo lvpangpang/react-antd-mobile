@@ -49,7 +49,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo \"git commit trigger husky pre-commit hook\" && npm run test"
+      "pre-commit": "echo \"git commit trigger husky pre-commit hook\""
     }
   }
 }
