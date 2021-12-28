@@ -59,7 +59,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{tsx, ts}": [
+    "src/**/*.{tsx,ts}": [
       "eslint"
     ]
   }

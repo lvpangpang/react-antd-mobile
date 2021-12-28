@@ -9,7 +9,6 @@ import Switch from "./Switch";
 import Input from "./Input";
 import { Row, Col } from "./Grid";
 
-const a
 export {
   Button,
   Icon,
