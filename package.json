@@ -32,14 +32,20 @@
   "devDependencies": {
     "@babel/core": "7.16.0",
     "@babel/preset-env": "7.16.4",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
     "dumi": "1.1.32",
     "dumi-theme-mobile": "1.1.15",
+    "eslint": "^8.5.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "father": "2.30.13",
     "gulp": "4.0.2",
     "gulp-babel": "8.0.0",
     "gulp-less": "5.0.0",
     "gulp-typescript": "6.0.0-alpha.1",
     "husky": "4.3.8",
+    "lint-staged": "^12.1.4",
     "supports-color": "8.1.0"
   },
   "dependencies": {
@@ -49,7 +55,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo \"git commit trigger husky pre-commit hook\""
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{tsx, ts}": [
+      "eslint",
+      "git add"
+    ]
   }
 }
