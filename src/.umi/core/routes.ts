@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType } from 'C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/umi/node_modules/@umijs/runtime';
+import { ApplyPluginsType } from 'C:/Users/57481/Desktop/github/react-antd-mobile/node_modules/umi/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 
@@ -9,9 +9,9 @@ export function getRoutes() {
   {
     "path": "/~demos/:uuid",
     "layout": false,
-    "wrappers": [require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/dumi-theme-mobile/es/layouts/demo.js').default],
+    "wrappers": [require('C:/Users/57481/Desktop/github/react-antd-mobile/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('C:/Users/57481/Desktop/github/react-antd-mobile/node_modules/dumi-theme-mobile/es/layouts/demo.js').default],
     "component": (props) => {
-        const { default: getDemoRenderArgs } = require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
+        const { default: getDemoRenderArgs } = require('C:/Users/57481/Desktop/github/react-antd-mobile/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
         const { default: Previewer } = require('dumi-theme-mobile/es/builtins/Previewer.js');
         const { default: demos } = require('@@/dumi/demos');
         const { usePrefersColor } = require('dumi/theme');
@@ -49,11 +49,11 @@ export function getRoutes() {
     "__dumiRoot": true,
     "layout": false,
     "path": "/",
-    "wrappers": [require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/node_modules/dumi-theme-mobile/es/layouts/index.js').default],
+    "wrappers": [require('C:/Users/57481/Desktop/github/react-antd-mobile/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('C:/Users/57481/Desktop/github/react-antd-mobile/node_modules/dumi-theme-mobile/es/layouts/index.js').default],
     "routes": [
       {
         "path": "/",
-        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/README.md').default,
+        "component": require('C:/Users/57481/Desktop/github/react-antd-mobile/README.md').default,
         "exact": true,
         "meta": {
           "locale": "en-US",
@@ -83,11 +83,11 @@ export function getRoutes() {
       },
       {
         "path": "/button",
-        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Button/README.md').default,
+        "component": require('C:/Users/57481/Desktop/github/react-antd-mobile/src/button/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Button/README.md",
-          "updatedTime": 1637647599716,
+          "filePath": "src/button/Readme.md",
+          "updatedTime": 1637648204000,
           "slugs": [
             {
               "depth": 1,
@@ -115,11 +115,11 @@ export function getRoutes() {
       },
       {
         "path": "/checkbox",
-        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Checkbox/README.md').default,
+        "component": require('C:/Users/57481/Desktop/github/react-antd-mobile/src/checkbox/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Checkbox/README.md",
-          "updatedTime": 1637309531256,
+          "filePath": "src/checkbox/Readme.md",
+          "updatedTime": 1637311027000,
           "slugs": [
             {
               "depth": 1,
@@ -157,11 +157,11 @@ export function getRoutes() {
       },
       {
         "path": "/grid/readem",
-        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Grid/READEM.md').default,
+        "component": require('C:/Users/57481/Desktop/github/react-antd-mobile/src/grid/READEM.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Grid/READEM.md",
-          "updatedTime": 1640682141195,
+          "filePath": "src/grid/READEM.md",
+          "updatedTime": 1666149569596,
           "slugs": [
             {
               "depth": 1,
@@ -189,11 +189,11 @@ export function getRoutes() {
       },
       {
         "path": "/icon",
-        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Icon/README.md').default,
+        "component": require('C:/Users/57481/Desktop/github/react-antd-mobile/src/icon/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Icon/README.md",
-          "updatedTime": 1637647750529,
+          "filePath": "src/icon/Readme.md",
+          "updatedTime": 1637648204000,
           "slugs": [
             {
               "depth": 1,
@@ -221,11 +221,11 @@ export function getRoutes() {
       },
       {
         "path": "/input",
-        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Input/README.md').default,
+        "component": require('C:/Users/57481/Desktop/github/react-antd-mobile/src/input/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Input/README.md",
-          "updatedTime": 1637650467451,
+          "filePath": "src/input/Readme.md",
+          "updatedTime": 1637650659000,
           "slugs": [
             {
               "depth": 1,
@@ -253,11 +253,11 @@ export function getRoutes() {
       },
       {
         "path": "/list",
-        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/List/README.md').default,
+        "component": require('C:/Users/57481/Desktop/github/react-antd-mobile/src/list/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/List/README.md",
-          "updatedTime": 1637650511624,
+          "filePath": "src/list/Readme.md",
+          "updatedTime": 1637650659000,
           "slugs": [
             {
               "depth": 1,
@@ -285,11 +285,11 @@ export function getRoutes() {
       },
       {
         "path": "/loading",
-        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Loading/README.md').default,
+        "component": require('C:/Users/57481/Desktop/github/react-antd-mobile/src/loading/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Loading/README.md",
-          "updatedTime": 1637650378131,
+          "filePath": "src/loading/Readme.md",
+          "updatedTime": 1637650659000,
           "slugs": [
             {
               "depth": 1,
@@ -322,11 +322,11 @@ export function getRoutes() {
       },
       {
         "path": "/radio",
-        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Radio/README.md').default,
+        "component": require('C:/Users/57481/Desktop/github/react-antd-mobile/src/radio/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Radio/README.md",
-          "updatedTime": 1637309622125,
+          "filePath": "src/radio/Readme.md",
+          "updatedTime": 1637311027000,
           "slugs": [
             {
               "depth": 1,
@@ -364,11 +364,11 @@ export function getRoutes() {
       },
       {
         "path": "/switch",
-        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Switch/README.md').default,
+        "component": require('C:/Users/57481/Desktop/github/react-antd-mobile/src/switch/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Switch/README.md",
-          "updatedTime": 1637309629791,
+          "filePath": "src/switch/Readme.md",
+          "updatedTime": 1637311027000,
           "slugs": [
             {
               "depth": 1,
@@ -396,11 +396,11 @@ export function getRoutes() {
       },
       {
         "path": "/toast",
-        "component": require('C:/Users/86157/Desktop/吕肥肥的github/react-antd-mobile/src/Toast/README.md').default,
+        "component": require('C:/Users/57481/Desktop/github/react-antd-mobile/src/toast/Readme.md').default,
         "exact": true,
         "meta": {
-          "filePath": "src/Toast/README.md",
-          "updatedTime": 1637650292882,
+          "filePath": "src/toast/Readme.md",
+          "updatedTime": 1637650659000,
           "slugs": [
             {
               "depth": 1,

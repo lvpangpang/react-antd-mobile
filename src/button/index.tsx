@@ -1,6 +1,6 @@
 import React from "react";
 import TouchFeedback from "rmc-feedback";
-import Icon from "../Icon/index";
+import Icon from "../icon/index";
 import "./index.less";
 
 declare interface ButtonProps {

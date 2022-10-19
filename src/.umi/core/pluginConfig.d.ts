@@ -122,6 +122,7 @@ dynamicImportSyntax?: {
 exportStatic?: {
 htmlSuffix?: boolean
 dynamicRoot?: boolean
+supportWin?: boolean
 /**
  * extra render paths only enable in ssr
  */

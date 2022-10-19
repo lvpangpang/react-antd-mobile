@@ -1,13 +1,13 @@
-import Button from "./Button";
-import Icon from "./Icon";
-import Loading from "./Loading";
-import Toast from "./Toast";
-import List from "./List";
-import Radio from "./Radio";
-import Checkbox from "./Checkbox";
-import Switch from "./Switch";
-import Input from "./Input";
-import { Row, Col } from "./Grid";
+import Button from "./button";
+import Icon from "./icon";
+import Loading from "./loading";
+import Toast from "./toast";
+import List from "./list";
+import Radio from "./radio";
+import Checkbox from "./checkbox";
+import Switch from "./switch";
+import Input from "./input";
+import { Row, Col } from "./grid";
 
 export {
   Button,
