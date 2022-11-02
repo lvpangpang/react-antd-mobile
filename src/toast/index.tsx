@@ -1,68 +1,82 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.less";
+import React from "react"
+import ReactDOM from "react-dom"
+import { v4 as uuidv4 } from "uuid"
+import "./index.less"
 
-interface Props {
-  content: string;
-  duration?: number;
-  mask?: Boolean;
-  onClose?: Function;
+export interface Props {
+  content: any
+  duration?: number
 }
 
-function Template(props: Props) {
-  const { content, mask } = props;
-
-  return (
-    <div
-      className="zec-toast"
-      style={mask ? { width: "100%", height: "100%" } : {}}
-    >
-      <div className="content">{content}</div>
-    </div>
-  );
+function Item(props: { content: any }) {
+  const { content } = props
+  return <div className='notice'>{content}</div>
 }
+class List extends React.Component {
+  constructor(props: any) {
+    super(props)
+    this.state = {
+      list: [],
+    }
+  }
 
-let isToast = false;
-const div = document.createElement("div");
-let timer: any = null;
+  addItem = (item: Props) => {
+    const { duration = 3000 } = item
+    const list  = (this.state as any).list
+    (item as any).key = uuidv4()
+    if (duration > 0) {
+      setTimeout(() => {
+        this.removeItem((item as any).key)
+      }, duration)
+    }
+    (list as any).push(item)
+    this.setState({
+      list,
+    })
+  }
 
-function Toast(props: Props) {
-  const { content, duration, mask = true, onClose = () => {} } = props;
+  removeItem = (key: string) => {
+    const list  = (this.state as any).list
+    const temp = list.filter((item: any) => {
+      if (item.key === key) {
+        return false
+      }
+      return true
+    })
+    this.setState({
+      list: temp,
+    })
+  }
 
-  const remove = () => {
-    timer = setTimeout(() => {
-      document.body.removeChild(div);
-      onClose();
-      isToast = false;
-    }, duration || 2000);
-  };
-
-  const add = () => {
-    document.body.appendChild(div);
-    ReactDOM.render(<Template content={content} mask={mask} />, div);
-    isToast = true;
-    remove();
-  };
-
-  if (!isToast) {
-    add();
-  } else {
-    document.body.removeChild(div);
-    clearTimeout(timer);
-    isToast = false;
-    add();
+  render() {
+    return (
+      <div className='notice-list'>
+        {(this.state as any).list.map((props:any) => {
+          return <Item {...props}></Item>
+        })}
+      </div>
+    )
   }
 }
 
-export default {
-  info(props: Props) {
-    Toast(props);
-  },
-  hide() {
-    if (isToast) {
-      document.body.removeChild(div);
-      clearTimeout(timer);
-      isToast = false;
-    }
-  },
-};
+(List as any).getListInstance = () => {
+  const div = document.createElement("div")
+  document.body.appendChild(div)
+  const instance = ReactDOM.render(<List></List>, div) // 获取类组件实例
+  return {
+    addItem: (itemProps: Props) => {
+      (instance as any).addItem(itemProps)
+    },
+  }
+}
+
+let listInstance:any
+function toast(props: Props) {
+  // 只实例化一次
+  if (!listInstance) {
+    listInstance = (List as any).getListInstance()
+  }
+  listInstance.addItem({...props})
+}
+
+export default toast

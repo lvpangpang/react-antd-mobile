@@ -39,7 +39,7 @@ function Button(props: ButtonProps) {
       isClick = true;
       setTimeout(function() {
         isClick = false;
-      }, 500);
+      }, 200);
       onClick();
     }
   };
