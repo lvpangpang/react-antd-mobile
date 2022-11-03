@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType } from 'C:/Users/57481/Desktop/github/react-antd-mobile/node_modules/umi/node_modules/@umijs/runtime';
+import { ApplyPluginsType } from 'C:/Users/57481/Desktop/github/react-antd-mobile/node_modules/@umijs/preset-built-in/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 
@@ -400,7 +400,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/toast/Readme.md",
-          "updatedTime": 1637650659000,
+          "updatedTime": 1667378337000,
           "slugs": [
             {
               "depth": 1,
@@ -425,6 +425,38 @@ export function getRoutes() {
           }
         },
         "title": "Toast - react-antd-mobile"
+      },
+      {
+        "path": "/tree",
+        "component": require('C:/Users/57481/Desktop/github/react-antd-mobile/src/tree/Readme.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "src/tree/Readme.md",
+          "updatedTime": 1667441676013,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "Tree",
+              "heading": "tree"
+            },
+            {
+              "depth": 2,
+              "value": "API",
+              "heading": "api"
+            },
+            {
+              "depth": 2,
+              "value": "DEMOS",
+              "heading": "demos"
+            }
+          ],
+          "title": "Tree",
+          "group": {
+            "path": "/tree",
+            "title": "Tree"
+          }
+        },
+        "title": "Tree - react-antd-mobile"
       },
       {
         "path": "/grid",

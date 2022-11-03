@@ -8,6 +8,7 @@ import Checkbox from "./checkbox";
 import Switch from "./switch";
 import Input from "./input";
 import { Row, Col } from "./grid";
+import Tree from './tree'
 
 export {
   Button,
@@ -21,4 +22,5 @@ export {
   Input,
   Row,
   Col,
+  Tree
 };

@@ -1,6 +1,6 @@
 {
   "name": "react-antd-mobile",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "react移动端组件库",
   "main": "index.js",
   "module": "es/index.js",
