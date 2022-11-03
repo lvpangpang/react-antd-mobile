@@ -3,16 +3,15 @@ import ReactDOM from "react-dom"
 import { v4 as uuidv4 } from "uuid"
 import "./index.less"
 
-export interface Props {
-  content: any
-  duration?: number
-}
-
 function Item(props: { content: any }) {
   const { content } = props
   return <div className='notice'>{content}</div>
 }
-class List extends React.Component {
+
+type StateType = {
+  list: Array<any>
+}
+class List extends React.Component<any, StateType> {
   constructor(props: any) {
     super(props)
     this.state = {
@@ -20,23 +19,23 @@ class List extends React.Component {
     }
   }
 
-  addItem = (item: Props) => {
+  addItem = (item: any) => {
     const { duration = 3000 } = item
-    const list  = (this.state as any).list
-    (item as any).key = uuidv4()
+    const { list } = this.state
+    item.key = uuidv4()
     if (duration > 0) {
       setTimeout(() => {
         this.removeItem((item as any).key)
       }, duration)
     }
-    (list as any).push(item)
+    ;(list as any).push(item)
     this.setState({
       list,
     })
   }
 
   removeItem = (key: string) => {
-    const list  = (this.state as any).list
+    const { list } = this.state
     const temp = list.filter((item: any) => {
       if (item.key === key) {
         return false
@@ -51,7 +50,7 @@ class List extends React.Component {
   render() {
     return (
       <div className='notice-list'>
-        {(this.state as any).list.map((props:any) => {
+        {this.state.list.map((props: any) => {
           return <Item {...props}></Item>
         })}
       </div>
@@ -59,24 +58,24 @@ class List extends React.Component {
   }
 }
 
-(List as any).getListInstance = () => {
+;(List as any).getListInstance = () => {
   const div = document.createElement("div")
   document.body.appendChild(div)
   const instance = ReactDOM.render(<List></List>, div) // 获取类组件实例
   return {
-    addItem: (itemProps: Props) => {
-      (instance as any).addItem(itemProps)
+    addItem: (itemProps: any) => {
+      ;(instance as any).addItem(itemProps)
     },
   }
 }
 
-let listInstance:any
-function toast(props: Props) {
+let listInstance: any
+function toast(props: any) {
   // 只实例化一次
   if (!listInstance) {
     listInstance = (List as any).getListInstance()
   }
-  listInstance.addItem({...props})
+  listInstance.addItem({ ...props })
 }
 
 export default toast
