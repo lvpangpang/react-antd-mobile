@@ -31,9 +31,6 @@ function SwitchDome() {
           console.log(value);
         }}
       ></Switch>
-      <Switch name="Disabled on" checked disabled></Switch>
-      <Switch name="Disabled off" disabled></Switch>
-      <Switch name="Different Color" color="red"></Switch>
     </div>
   );
 }

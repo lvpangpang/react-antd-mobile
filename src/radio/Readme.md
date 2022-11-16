@@ -14,7 +14,6 @@
 | 属性     | 说明 | 类型             | 默认值 |
 | -------- | ---- | ---------------- | ------ |
 | value    | 值   | string or number |        |
-| label    | name | string           |        |
 | disabled | 禁用 | boolean          | false  |
 
 ## DEMOS
@@ -49,9 +48,9 @@ function RadioDome() {
         }}
         value={1}
       >
-        <RadioItem value={1}>吕肥肥</RadioItem>
-        <RadioItem value={2}>王大熊</RadioItem>
-        <RadioItem value={3}>王小美</RadioItem>
+        <RadioItem value={1}>西瓜</RadioItem>
+        <RadioItem value={2}>苹果</RadioItem>
+        <RadioItem value={3}>樱桃</RadioItem>
       </Radio>
     </>
   );
