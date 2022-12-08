@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType } from 'C:/Users/57481/Desktop/github/react-antd-mobile/node_modules/@umijs/preset-built-in/node_modules/@umijs/runtime';
+import { ApplyPluginsType } from 'C:/Users/57481/Desktop/github/react-antd-mobile/node_modules/umi/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 
@@ -326,7 +326,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/radio/Readme.md",
-          "updatedTime": 1637311027000,
+          "updatedTime": 1668582770000,
           "slugs": [
             {
               "depth": 1,
@@ -368,7 +368,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "src/switch/Readme.md",
-          "updatedTime": 1637311027000,
+          "updatedTime": 1668582770000,
           "slugs": [
             {
               "depth": 1,

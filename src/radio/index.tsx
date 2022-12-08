@@ -1,3 +1,4 @@
+import classnames from "classnames"
 import React from "react"
 import { useState } from "react"
 import "./index.less"
@@ -40,9 +41,19 @@ interface RadioItemProps {
 function RadioItem(props: RadioItemProps) {
   const { value, children, disabled, radioValue, onClick = () => {} } = props
 
+  const classname1 = classnames({
+    'zec-radio': true,
+    'zec-radio-disabled': disabled
+  })
+
+  const classname2 = classnames({
+    'circle': true,
+    'active': radioValue === value && !disabled
+  })
+
   return (
     <div
-      className={`zec-radio ${disabled ? "zec-radio-disabled" : ""}`}
+      className={classname1}
       onClick={() => {
         if (!disabled) {
           onClick(value)
@@ -51,9 +62,7 @@ function RadioItem(props: RadioItemProps) {
     >
       <div className='content'>
         <div
-          className={`circle ${
-            radioValue === value && !disabled ? "active" : ""
-          } `}
+          className={classname2}
         >
           <div className='fork'></div>
         </div>

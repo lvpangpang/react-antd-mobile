@@ -1,4 +1,5 @@
 import React from "react"
+import classNames from "classnames"
 import { useState } from "react"
 import "./index.less"
 
@@ -45,9 +46,13 @@ declare interface CheckboxItemProps {
 }
 function CheckboxItem(props: CheckboxItemProps) {
   const { value, children, checkboxValue, disabled, onClick = () => {} } = props
+  const className = classNames({
+    "zec-checkbox": true,
+    "zec-checkbox-disabled": disabled,
+  })
   return (
     <div
-      className={`zec-checkbox ${disabled ? "zec-checkbox-disabled" : ""}`}
+      className={className}
       onClick={() => {
         if (!disabled) {
           onClick()

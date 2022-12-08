@@ -1,5 +1,5 @@
-import React from "react"
-import { useState } from "react"
+import React, { useState } from "react"
+import classnames from "classnames"
 import "./index.less"
 
 interface Props {
@@ -21,15 +21,19 @@ function Switch(props: Props) {
 
   const [isChecked, setIsChecked] = useState(checked)
 
+  const classnames1 = classnames({
+    switch: true,
+    'switch-active': isChecked,
+    'switch-disbled': disabled
+  })
+
   return (
     <div className='zec-switch'>
       <div className='zec-name'>{name}</div>
       <div className='zec-content'>
         <div
           style={{ background: isChecked ? color : "" }}
-          className={`switch ${isChecked ? "switch-active" : ""} ${
-            disabled ? "switch-disbled" : ""
-          }`}
+          className={classnames1}
           onClick={() => {
             if (!disabled) {
               setIsChecked(!isChecked)
