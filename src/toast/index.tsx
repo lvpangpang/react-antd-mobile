@@ -28,9 +28,8 @@ class List extends React.Component<any, StateType> {
         this.removeItem((item as any).key)
       }, duration)
     }
-    ;(list as any).push(item)
     this.setState({
-      list,
+      list: [...list, item],
     })
   }
 
